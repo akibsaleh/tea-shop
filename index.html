@@ -9,6 +9,10 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/91663b56b8.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +21,7 @@
     />
     <title>Tea Shop Daisy UI</title>
     <style>
-      .font-monrope {
+      .font-manrope {
         font-family: "Manrope", sans-serif;
       }
     </style>
@@ -26,26 +30,43 @@
         theme: {
           extend: {
             colors: {
-              tea:#898989;
-            }
-          }
-        }
-      }
+              tea: "#898989",
+            },
+          },
+        },
+      };
     </script>
   </head>
-  <body>
-    <header></header>
-    <main>
-      <h1>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, est.
-      </h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nesciunt
-        facilis officiis odio debitis sequi laborum culpa. Excepturi dolore
-        deleniti veritatis obcaecati sint ullam quia beatae voluptas nostrum, ea
-        omnis?
-      </p>
-    </main>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good<br />tea time at The<br />Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+          <div>
+            <img src="/images/banner.png" class="max-w-sm" />
+            <div
+              class="flex flex-row gap-4 drop-shadow-lg bg-white items-center"
+            >
+              <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+              <div class="">
+                <h3>5.00</h3>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
     <footer></footer>
   </body>
 </html>
